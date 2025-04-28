@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar, .type-filter {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.pokemon-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-types {
+  margin-top: 10px;
+}
+
+.type-badge {
+  display: inline-block;
+  background: #eee;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.center {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+}
+
+/* Example type colors (optional) */
+.type-fire { background-color: #f08030; color: white; }
+.type-water { background-color: #6890f0; color: white; }
+.type-grass { background-color: #78c850; color: white; }
+.type-electric { background-color: #f8d030; color: white; }
+/* Add more type classes if you want! */
